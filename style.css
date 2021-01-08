@@ -1,0 +1,23 @@
+.container {
+    margin: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    /* border: solid; */
+    padding: 1em;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    /* border: solid; */
+    padding: 1em;
+}

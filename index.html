@@ -14,7 +14,6 @@
 
 <body>
     <div class="container">
-        <!-- <input type="file"> -->
         <div class="input">
             <div id="top">
                 <label for="top">Top Text</label><br>
@@ -22,7 +21,7 @@
                 <div class="topStyle">
                     <input type="color" id="tColor" name="tColor">
                     <label for="tFontSize">Font Size</label>
-                    <input type="range" id="tFontSize" min="11" max="60">
+                    <input type="range" id="tFontSize" min="11" max="100">
                     <label for="tFontType">Fonts</label>
                     <select id="tFontType">
                         <option value="Lato">Lato</option>
@@ -32,13 +31,14 @@
                     </select>
                 </div>
             </div>
+            <br>
             <div id="bottom">
                 <label for="bottom">Bottom Text</label><br>
                 <textarea form="form" id="bText" cols="40" rows="5" name="bText"></textarea>
                 <div class="bottomStyle">
                     <input type="color" id="bColor" name="bColor">
                     <label for="bFontSize">Font Size</label>
-                    <input type="range" id="bFontSize" min="11" max="60">
+                    <input type="range" id="bFontSize" min="11" max="100">
                     <label for="bFontType">Fonts</label>
                     <select id="bFontType">
                         <option value="Lato">Lato</option>
@@ -51,6 +51,9 @@
         </div>
 
         <div class="output">
+            <input type="file" id="user_picture" onchange="update_image()">
+            <br>
+            <div id="meme_picture"><img height="500" width="500"></div>
             <div class="topDisplay">
                 <p id="topDisplay"></p>
             </div>

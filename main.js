@@ -52,20 +52,9 @@ bFontType.addEventListener('change', function() {
     bottomDisplay.style.fontFamily = bFontType.value
 })
 
-
-// // from http://jsfiddle.net/ugPDx/
-// $("input").change(function(e) {
-
-//     for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
-
-//         var file = e.originalEvent.srcElement.files[i];
-
-//         var img = document.createElement("img");
-//         var reader = new FileReader();
-//         reader.onloadend = function() {
-//              img.src = reader.result;
-//         }
-//         reader.readAsDataURL(file);
-//         $("input").after(img);
-//     }
-// });
+// from https://coderdojoscotland.com/wp-content/uploads/2018/03/CoderDojo-Meme-Website.pdf
+function update_image(){
+    var img = document.querySelector('img');
+    var file = document.querySelector('input[type=file]').files[0];
+    img.src =  window.URL.createObjectURL(file);
+}
