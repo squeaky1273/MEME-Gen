@@ -1,12 +1,12 @@
 const tText = document.getElementById('tText')
 const tColor = document.getElementById('tColor')
 const tFontSize = document.getElementById('tFontSize')
-const tFontType = document.getElementById('tFontType')
 
 const bText = document.getElementById('bText')
 const bColor = document.getElementById('bColor')
 const bFontSize = document.getElementById('bFontSize')
-const bFontType = document.getElementById('bFontType')
+
+const fontType = document.getElementById('fontType')
 
 const topDisplay = document.getElementById('topDisplay')
 const bottomDisplay = document.getElementById('bottomDisplay')
@@ -27,11 +27,6 @@ tFontSize.addEventListener('change', function() {
     topDisplay.style.fontSize = tFontSize.value + "px"
 })
 
-// Top Text Type Handler
-tFontType.addEventListener('change', function() {
-    topDisplay.style.fontFamily = tFontType.value
-})
-
 // Bottom Text Event Handler
 bText.addEventListener('change', function() {
     bottomDisplay.innerHTML = bText.value
@@ -47,9 +42,10 @@ bFontSize.addEventListener('change', function() {
     bottomDisplay.style.fontSize = bFontSize.value + "px"
 })
 
-// Bottom Text Type Handler
-bFontType.addEventListener('change', function() {
-    bottomDisplay.style.fontFamily = bFontType.value
+// Top & Bottom Text Type Handler
+fontType.addEventListener('change', function() {
+    topDisplay.style.fontFamily = fontType.value
+    bottomDisplay.style.fontFamily = fontType.value
 })
 
 // from https://coderdojoscotland.com/wp-content/uploads/2018/03/CoderDojo-Meme-Website.pdf
