@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <script src="jquery-3.5.1.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="jquery-3.5.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>MEME Gen</title>
@@ -14,30 +14,39 @@
 
 <body>
     <div class="container">
+        <input type="file">
         <div class="input">
             <div id="top">
                 <label for="top">Top Text</label><br>
                 <textarea form="form" id="tText" cols="40" rows="5" name="tText"></textarea>
-                <input type="color" id="tColor" name="tColor">
-                <label for="tFontSize">Font Size</label>
-                <input type="range" id="tFontSize" min="11" max="60">
-                <label for="tFontType">Fonts</label>
-                <select id="tFontType">
-                    <option value="Lato">Lato</option>
-                    <option value="Roboto">Roboto</option>
-                </select>
+                <div class="topStyle">
+                    <input type="color" id="tColor" name="tColor">
+                    <label for="tFontSize">Font Size</label>
+                    <input type="range" id="tFontSize" min="11" max="60">
+                    <label for="tFontType">Fonts</label>
+                    <select id="tFontType">
+                        <option value="Lato">Lato</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                    </select>
+                </div>
             </div>
             <div id="bottom">
                 <label for="bottom">Bottom Text</label><br>
                 <textarea form="form" id="bText" cols="40" rows="5" name="bText"></textarea>
-                <input type="color" id="bColor" name="bColor">
-                <label for="bFontSize">Font Size</label>
-                <input type="range" id="bFontSize" min="11" max="60">
-                <label for="bFontType">Fonts</label>
-                <select id="bFontType">
-                    <option value="Lato">Lato</option>
-                    <option value="Roboto">Roboto</option>
-                </select>
+                <div class="bottomStyle">
+                    <input type="color" id="bColor" name="bColor">
+                    <label for="bFontSize">Font Size</label>
+                    <input type="range" id="bFontSize" min="11" max="60">
+                    <label for="bFontType">Fonts</label>
+                    <select id="bFontType">
+                        <option value="Lato">Lato</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                    </select>
+                </div>
             </div>
         </div>
 
