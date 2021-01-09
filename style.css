@@ -1,3 +1,7 @@
+/* body {
+    background: rgb(160, 159, 159);
+} */
+
 .container {
     margin: 50px;
     display: flex;
@@ -8,18 +12,20 @@
 .input {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0.5;
     align-items: center;
     /* border: solid; */
     padding: 1em;
-    margin-top: 150px;
+    margin-top: 85px;
+    line-height: 2;
+    left: 50px;
 }
 
 .output {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    align-items: center;
+    /* align-items: center; */
     /* border: solid; */
     padding: 1em;
 }
@@ -27,17 +33,13 @@
 #topDisplay {
     width: 600px;
     position: absolute;
-    left: 900px;
+    left: 725px;
     top: 150px;
 }
 
 #bottomDisplay {
     width: 600px;
     position: absolute;
-    left: 900px;
+    left: 725px;
     top: 475px;
-}
-
-.meme_picture {
-    left: 00px;
 }
