@@ -1,7 +1,8 @@
 .container {
-    margin: 35px;
+    margin: 50px;
     display: flex;
     flex-direction: row;
+    left: 100px;
 }
 
 .input {
@@ -11,7 +12,7 @@
     align-items: center;
     /* border: solid; */
     padding: 1em;
-    margin-top: 130px;
+    margin-top: 150px;
 }
 
 .output {
@@ -21,4 +22,22 @@
     align-items: center;
     /* border: solid; */
     padding: 1em;
+}
+
+#topDisplay {
+    width: 600px;
+    position: absolute;
+    left: 900px;
+    top: 150px;
+}
+
+#bottomDisplay {
+    width: 600px;
+    position: absolute;
+    left: 900px;
+    top: 475px;
+}
+
+.meme_picture {
+    left: 00px;
 }

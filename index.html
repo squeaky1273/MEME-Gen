@@ -15,26 +15,47 @@
 <body>
     <div class="container">
         <div class="input">
-            <div id="top">
-                <label for="top">Top Text</label><br>
-                <textarea form="form" id="tText" cols="40" rows="5" name="tText"></textarea>
+            <form>
+                <textarea form="form" id="top_text" cols="40" rows="5" maxlength="70" oninput="update_top_text()"></textarea>
                 <div class="topStyle">
                     <input type="color" id="tColor" name="tColor">
                     <label for="tFontSize">Font Size</label>
-                    <input type="range" id="tFontSize" min="11" max="100">
+                    <input type="range" id="tFontSize" min="11" max="60">
                 </div>
-            </div>
-            <br>
-            <div id="bottom">
-                <label for="bottom">Bottom Text</label><br>
-                <textarea form="form" id="bText" cols="40" rows="5" name="bText"></textarea>
+                <br>
+                <textarea form="form" id="bottom_text" cols="40" rows="5" maxlength="70" oninput="update_bottom_text()"></textarea>
                 <div class="bottomStyle">
                     <input type="color" id="bColor" name="bColor">
                     <label for="bFontSize">Font Size</label>
-                    <input type="range" id="bFontSize" min="11" max="100">
+                    <input type="range" id="bFontSize" min="11" max="60">
                 </div>
-            </div>
+                <br>
+                <div class="font">
+                    <label for="fontType">Fonts</label>
+                    <select id="fontType">
+                        <option value="Lato">Lato</option>
+                        <option value="Roboto">Roboto</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Brush Script MT">Brush Script MT</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="ouput">
+            <center><input type="file" id="user_picture" onchange="update_image()"></center>
             <br>
+            <br>
+            <div id="meme_picture"><img height="500" width="500"></div>
+            <div class="topDisplay">
+                <p id="topDisplay"></p>
+            </div>
+            <div class="bottomDisplay">
+                <p id="bottomDisplay"></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
             <div class="font">
                 <label for="fontType">Fonts</label>
                 <select id="fontType">
@@ -57,7 +78,7 @@
                 <p id="bottomDisplay"></p>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="main.js"></script>
 </body>
 
