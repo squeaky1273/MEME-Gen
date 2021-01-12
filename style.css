@@ -1,18 +1,19 @@
-/* body {
-    background: rgb(160, 159, 159);
-} */
+body {
+    background: rgb(228, 227, 227);
+}
 
 .container {
     margin: 50px;
     display: flex;
     flex-direction: row;
-    left: 100px;
+    left: 200px;
+    top: 450px;
 }
 
 .input {
     display: flex;
     flex-direction: column;
-    flex-grow: 0.5;
+    flex-grow: 0.65;
     align-items: center;
     /* border: solid; */
     padding: 1em;
@@ -34,12 +35,28 @@
     width: 600px;
     position: absolute;
     left: 725px;
-    top: 150px;
+    top: 225px;
 }
 
 #bottomDisplay {
     width: 600px;
     position: absolute;
     left: 725px;
-    top: 475px;
+    top: 550px;
 }
+
+.topbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(188, 203, 30);
+}
+
+h1 {
+    font-size: 150px;
+    display: block;
+    color: rgb(80, 80, 80);
+    padding: 14px 16px;
+    text-decoration: none;
+  }
